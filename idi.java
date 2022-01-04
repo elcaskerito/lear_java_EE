@@ -18,17 +18,35 @@ class idi{
       
     static Scanner enter= new Scanner(System.in);
     public static void main(String[] args){
-        int a,b=0;
+
+        int a,b,c=0;
         String text= new String();
+        System.out.println("Un pg qui permet de testez si la somme des deux nombres est supérieur ou inférieur a 100\n");
+        while (text!="Q")
+        {
+     
         System.out.println("entrer le nombre A : ");
         a=enter.nextInt();
         enter.nextLine();
-        System.out.println("enter le text suivant :");
-        text=enter.nextLine();
+       
         System.out.println("enter le nombre B :");
         b=enter.nextInt();
-        System.out.println("la somme de A+B est  :"+(a+b));
-        System.out.println("le text entrer est :"+text);
+        c=a+b;
+        if (c>100){
+            System.out.println(" Super, la somme de A+B est > a 100  :"+(a+b));
+
+        }
+        else if(c==100){
+        System.out.println("la somme de A+B est égale a  :"+(a+b));
+
+        }
+        else{
+            System.out.println("la somme est inférieur a 100, Somme= :"+(a+b));
+            enter.nextLine();
+        }
+        System.out.println("Taper Q pour quitter et O pour continuer   :");
+        text=enter.nextLine();
+    }
      }
 
 
