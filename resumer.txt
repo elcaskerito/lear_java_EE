@@ -1,0 +1,16 @@
+final : est utiliser pour déclarer une constante de class;
+le constructeur se defini sans type de retour juste public suivi du nom de la classe
+- taille d'un élément : tab.lenght 
+- tab1=tab2 : afectation de reférence mémoire car se sont deux objet identique
+- pour faire une copie il faudra passer par une boucle 
+- pour optimiser le parcourt dans la bloc d'initialisation de for mon doit initialiser la taille du tableau dans une variable
+- thread.sleep(2000)
+- les méthodes de la classe arrayList:{
+    -data.contains()
+    -data.indexOf()
+    -data.add(value)
+    -data.get()
+    -data.clear()
+    -data.remove(index)
+    -data.set(indice,value): permet de modifier un élément dans le tableau
+}

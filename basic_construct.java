@@ -9,7 +9,4 @@ public class basic_construct {
         prenom=pre;
     }
     
-
-
-
 }
