@@ -14,3 +14,9 @@ le constructeur se defini sans type de retour juste public suivi du nom de la cl
     -data.remove(index)
     -data.set(indice,value): permet de modifier un élément dans le tableau
 }
+
+- le polymorfisme ou encore méthode polymorphe sont des méthodes typique de celle de la classe mère avec des traitement un peut différent. elle garde le squelette initial. 
+
+- par contre la redifinition d'une méthode consiste a changer ses type des variable en paramèttre et en plus le traitement.
+
+- l'on peut redefinir ou polymorpher la méthode toString pour afficher du text en affichant directement l'objet sans les getters. 

@@ -16,10 +16,18 @@ public personne(){
 
 // constructeur d'initialisation
 
-    public personne(String no,String pre,int ag){
-        nom=no;
-        prenom=pre;
-        age=ag;
+    public personne(String no,String pre,int ag)throws ageException{
+        if(ag<0)
+        {
+            throw new ageException(ag);
+        }
+        else{
+
+            nom=no;
+            prenom=pre;
+            age=ag;
+        }
+      
     }
 
 // les accesseur 
@@ -51,4 +59,9 @@ public personne(){
             return a.getage();
 
     }
+    public String info(){
+        return "les infos : "+this.nom+" \nprenom : "+this.prenom+"\n age : "+this.age;
+    }
+
+    
 }

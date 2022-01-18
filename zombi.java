@@ -7,7 +7,7 @@ public class zombi extends personne {
         this.mode="mangeur de personne";
     }
     
-    public zombi(String nom,String prenom,int ag, String mo){
+    public zombi (String nom,String prenom,int ag, String mo)throws ageException{
         super(nom,prenom,ag);
         this.mode=mo;   
     }

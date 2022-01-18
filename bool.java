@@ -6,9 +6,10 @@ public class bool {
    static Scanner re= new Scanner(System.in);
    static public void main(String[] args){
    
-    personne idi=new personne("idris", "mahamat",90);
-
-    System.out.println("ma personne a pour nom : "+idi.getnom());
+    try{
+       personne idi=new personne("idris", "mahamat",90);
+      
+       System.out.println("ma personne a pour nom : "+idi.getnom());
     System.out.println(idi.getprenom());
     System.out.println(idi.getage());
     System.out.println(idi.nationnalite);
@@ -16,13 +17,24 @@ public class bool {
     personne nassir=new personne("nassir","ahmat",100);
     System.out.println(nassir.nationnalite);
 
+    idi.compare(nassir);
+      }
+
+       catch (ageException e){
+          System.out.println("exception sur l'age sur votre instanciation");
+       }
+
+   
+
+    
+
 
     // test de compréhension du mot clé this
     /**
      * test de commentaire javadoc
      */
 
-    idi.compare(nassir);
+    
    System.out.println("£££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££££");
    zombi has= new zombi();
    System.out.println(has.getnom());
@@ -32,22 +44,28 @@ public class bool {
    System.out.println(has.getmode());
    System.out.println("************************************************************");
 
+ try {
    zombi a=new zombi("idris", "mahamat",10,"10 personne par jour");
 
-    System.out.println("Zombi a pour nom : "+a.getnom());
-    System.out.println(a.getprenom());
-    System.out.println(a.getage());
-    System.out.println(a.getmode());
+   System.out.println("Zombi a pour nom : "+a.getnom());
+   System.out.println(a.getprenom());
+   System.out.println(a.getage());
+   System.out.println(a.getmode());
 
-    zombi b=new zombi("nassir", "ahmat",50,"50 personne par jour");
+   zombi b=new zombi("nassir", "ahmat",50,"50 personne par jour");
 
-    System.out.println("Zombi a pour nom : "+b.getnom());
-    System.out.println(b.getprenom());
-    System.out.println(b.getage());
-    System.out.println(b.getmode());
-    int tt=a.te(b,10);
+   System.out.println("Zombi a pour nom : "+b.getnom());
+   System.out.println(b.getprenom());
+   System.out.println(b.getage());
+   System.out.println(b.getmode());
+   
+   int tt=a.te(b,10);
 
-    System.out.println("l'age supérieur est ajouter de plus 10 ans ce qui donne :  "+tt);
+   System.out.println("l'age supérieur est ajouter de plus 10 ans ce qui donne :  "+tt);
+ }
+ catch (ageException e){
+    System.out.println(" un autre exception capturé sur l'age du zombi ");
+ }
    
    // int var[]=new int[10];
    // int t[]= new int[10];
